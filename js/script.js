@@ -24,6 +24,10 @@ function ostatok(number1, number2){
   return number1.value % number2.value;
 }
 
+function protsent(number1, number2){
+  return (number1.value / number2.value)*100;
+}
+
 equals.addEventListener('click', function(){
 if(select.value == '+'){
   result.value = plus(num1, num2)
@@ -39,6 +43,9 @@ if(select.value == '/') {
 }
 if(select.value == '%') {
   result.value = ostatok(num1, num2)
+}
+if(select.value == '%2'){
+  result.value = protsent(num1, num2)
 }
 })
 
